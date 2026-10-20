@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#001f24","on-primary-container":"#00626e","on-background":"#e3e1e9","on-surface-variant":"#bac9cc","surface-bright":"#38393f","tertiary-container":"#d6c9ff","tertiary-fixed-dim":"#cdbdff","error":"#ffb4ab","secondary-fixed-dim":"#b0c6ff","primary-container":"#00e5ff","surface":"#121318","secondary-container":"#0068ed","on-primary":"#00363d","surface-variant":"#34343a","inverse-on-surface":"#2f3036","surface-dim":"#121318","error-container":"#93000a","primary":"#c3f5ff","surface-tint":"#00daf3","on-tertiary-fixed-variant":"#4f00d0","surface-container-high":"#292a2f","outline":"#849396","inverse-surface":"#e3e1e9","surface-container-highest":"#34343a","on-surface":"#e3e1e9","surface-container-low":"#1a1b21","primary-fixed-dim":"#00daf3","on-secondary-fixed":"#001945","on-primary-fixed-variant":"#004f58","on-secondary":"#002d6e","on-tertiary-fixed":"#20005f","on-error-container":"#ffdad6","on-tertiary":"#370096","on-tertiary-container":"#622be5","on-secondary-container":"#f2f3ff","tertiary":"#f1e9ff","secondary-fixed":"#d9e2ff","on-secondary-fixed-variant":"#00429b","surface-container-lowest":"#0d0e13","surface-container":"#1e1f25","inverse-primary":"#006875","outline-variant":"#3b494c","on-error":"#690005","tertiary-fixed":"#e8deff","primary-fixed":"#9cf0ff","background":"#121318","secondary":"#b0c6ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-mobile":"1rem","space-md":"1rem","space-xs":"0.25rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-lg":"1.5rem","space-xl":"2.5rem","margin":"3rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg":["Geist"],"label-code":["JetBrains Mono"],"display-hero":["Geist"],"headline-sm":["Geist"],"body-lg":["Geist"],"display-hero-mobile":["Geist"],"headline-md":["Geist"],"headline-lg-mobile":["Geist"],"body-sm":["Geist"],"label-caps":["JetBrains Mono"],"body-md":["Geist"]},"fontSize":{"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"600"}],"label-code":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.04em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 transition-all duration-200"><div class="max-w-[1200px] mx-auto px-margin-mobile md:px-gutter lg:px-margin"><div class="h-20 flex items-center justify-between"><div class="flex items-center gap-space-sm"><a class="group flex items-center gap-space-sm p-space-xs rounded-lg transition-transform hover:scale-105" data-path="about" href="#"><div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shadow-[0_0_0_1px_rgba(255,255,255,0.08)] group-hover:shadow-[0_0_0_1px_rgba(0,229,255,0.35)] transition-all"><span class="font-label-code text-label-code font-bold text-primary-container"></span></div><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface hidden sm:inline-block">MM</span></a></div><nav class="hidden lg:flex items-center gap-space-xs p-1.5 bg-surface-container-low/80 backdrop-blur-xl rounded-full shadow-[0_1px_8px_rgba(0,0,0,0.24)]" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(0,229,255,0.2)]"><a aria-current="page" class="px-space-md py-space-xs rounded-full font-label-code transition-all bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(0,229,255,0.2)]" data-path="about" href="#">About</a><a class="px-space-md py-space-xs rounded-full font-label-code text-label-code text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="skills" href="#">Skills</a><a class="px-space-md py-space-xs rounded-full font-label-code text-label-code text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="projects" href="#">Projects</a><a class="px-space-md py-space-xs rounded-full font-label-code text-label-code text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="experience" href="#">Experience</a><a class="px-space-md py-space-xs rounded-full font-label-code text-label-code text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1.5 p-1 bg-surface-container-low/80 backdrop-blur-xl rounded-lg"><a aria-label="GitHub Profile" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="https://github.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-lg">terminal</span></a><a aria-label="LinkedIn Profile" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="https://linkedin.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-lg">share</span></a></div><button aria-label="Toggle Color Scheme" class="w-9 h-9 rounded-lg bg-surface-container-low/80 backdrop-blur-xl flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-xl">dark_mode</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgHiF_IPHQtY7Lp8fWVthICY1aBAg9zMyNUaHyaS7Suq8xERg-Gm98qmH7VKwM_TgP_KLbs3hv8j5DsRgkKzbaBhop040vg4JAPAu6edaj47J1SbUf1zTzcL-ZZk4XB6jTUnt6BCR0k-lj6YOAqkPeEOUykVPUzVwrk-auBY3YrCWMrToO7SaqbjEosMeg9PAPuQSDXfgTgz5u87jSbUdSAcBQskpPMTEVzzR6YAMh6sZkE9g_7Lm2Qg"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Interactive Canvas Root with Theme Attributes -->
+<div class="relative w-full max-w-[1200px] mx-auto px-margin-mobile md:px-gutter lg:px-margin text-on-surface" id="portfolio-root">
+<!-- Ambient Glowing Backdrops (Pure architectural lighting) -->
+<div class="pointer-events-none absolute -top-12 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-[128px] -z-10"></div>
+<div class="pointer-events-none absolute top-[900px] right-0 w-[500px] h-[500px] bg-secondary-container/10 rounded-full blur-[140px] -z-10"></div>
+<!-- SECTION 1: HERO -->
+<section class="relative pt-space-lg pb-space-xl flex flex-col lg:flex-row items-center justify-between gap-space-xl" id="hero">
+<!-- Left Editorial Column -->
+<div class="flex-1 space-y-space-md text-left z-10">
+<!-- Monospaced Eyebrow -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container rounded-full shadow-[0_0_0_1px_rgba(255,255,255,0.06)]">
+<!-- <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span> -->
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Available for Architecture & Consulting</span>
+</div>
+<div class="space-y-space-xs">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+            Mina Maher
+          </h1>
+<p class="font-headline-sm text-headline-sm text-primary-container font-medium">
+            Senior Full Stack Engineer & UI Architect
+          </p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+          Building resilient, high-performance web applications and design systems with modern web standards and human-centered design.
+        </p>
+<!-- CTA Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="px-space-lg py-space-sm bg-gradient-to-r from-secondary-container to-primary-container text-on-primary-fixed font-headline-sm text-[15px] font-semibold rounded-lg shadow-[0_0_24px_rgba(0,229,255,0.25)] hover:shadow-[0_0_32px_rgba(0,229,255,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2" href="#projects">
+<span>View Projects</span>
+<span class="material-symbols-outlined text-sm">arrow_downward</span>
+</a>
+<a class="px-space-lg py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary-container font-headline-sm text-[15px] font-medium rounded-lg shadow-[0_0_0_1px_rgba(255,255,255,0.1)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.4)] transition-all" href="#contact">
+            Get in Touch
+          </a>
+<button class="px-space-md py-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-code text-label-code rounded-lg flex items-center gap-1.5 transition-colors" id="download-cv-btn" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span>CV / Resume</span>
+</button>
+</div>
+<!-- Quick Stats Grid -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-md max-w-md">
+<div class="p-space-sm bg-surface-container-low rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.05)]">
+<div class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">6+</div>
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant">Years Exp</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.05)]">
+<div class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">30+</div>
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant">Shipped Apps</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.05)]">
+<div class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">1.2k</div>
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant">OS Stars</div>
+</div>
+</div>
+</div>
+<!-- Right Avatar with Precision Halos -->
+<div class="relative flex items-center justify-center">
+<!-- Glowing Ring Halo -->
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-primary-container/30 to-secondary-container/20 blur-2xl scale-110"></div>
+<div class="relative p-2 rounded-full bg-surface-container-high shadow-[0_0_0_1px_rgba(0,229,255,0.25),0_12px_40px_rgba(0,0,0,0.6)]">
+<img alt="Alex Morgan - Senior Full Stack Engineer" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-inner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgHiF_IPHQtY7Lp8fWVthICY1aBAg9zMyNUaHyaS7Suq8xERg-Gm98qmH7VKwM_TgP_KLbs3hv8j5DsRgkKzbaBhop040vg4JAPAu6edaj47J1SbUf1zTzcL-ZZk4XB6jTUnt6BCR0k-lj6YOAqkPeEOUykVPUzVwrk-auBY3YrCWMrToO7SaqbjEosMeg9PAPuQSDXfgTgz5u87jSbUdSAcBQskpPMTEVzzR6YAMh6sZkE9g_7Lm2Qg"/>
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-[0_0_0_1px_rgba(0,229,255,0.3)] flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_#00e5ff]"></span>
+<span class="font-label-code text-[11px] text-on-surface font-medium">San Francisco, CA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: ABOUT ME & PHILOSOPHY -->
+<section class="py-space-xl" id="about">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="font-label-code text-label-code text-primary-container font-semibold">01 //</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Engineering Philosophy</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-5 space-y-space-sm">
+<h2 class="font-headline-lg text-headline-lg tracking-tight text-on-surface">
+            Architecting robust foundations for the human web.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            I specialize in crafting mission-critical frontend engines and scalable cloud architectures. From distributed backends to sub-millisecond component renders, my career is focused on the convergence of micro-precision, strict type-safety, and tactile accessibility.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            I advocate for lean dependencies, standards-based web components, and resilient fault domains. When software works flawlessly at scale, the interface feels weightless.
+          </p>
+</div>
+<!-- Bento Highlight Cards -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-space-md bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.35),0_8px_24px_rgba(0,229,255,0.08)] transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container mb-space-sm">
+<span class="material-symbols-outlined text-xl">account_tree</span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-on-surface mb-space-xs font-semibold">Clean Architecture</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Decoupled modular layers, deterministic state machines, and pure functional pipelines.
+              </p>
+</div>
+<span class="mt-space-md font-label-code text-[11px] text-primary">01 / SOLID</span>
+</div>
+<div class="p-space-md bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.35),0_8px_24px_rgba(0,229,255,0.08)] transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container mb-space-sm">
+<span class="material-symbols-outlined text-xl">speed</span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-on-surface mb-space-xs font-semibold">Performance First</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Sub-50ms TTFB, 100/100 Core Web Vitals, tree-shaken bundles, and zero DOM bloat.
+              </p>
+</div>
+<span class="mt-space-md font-label-code text-[11px] text-primary">02 / LIGHTHOUSE 100</span>
+</div>
+<div class="p-space-md bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.35),0_8px_24px_rgba(0,229,255,0.08)] transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container mb-space-sm">
+<span class="material-symbols-outlined text-xl">accessibility_new</span>
+</div>
+<h3 class="font-headline-sm text-[17px] text-on-surface mb-space-xs font-semibold">Accessible & Fluid</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Strict WCAG 2.1 AA compliance, ergonomic keyboard flows, screen-reader parity.
+              </p>
+</div>
+<span class="mt-space-md font-label-code text-[11px] text-primary">03 / A11Y READY</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SKILLS -->
+<section class="py-space-xl" id="skills">
+<div class="flex items-center justify-between mb-space-md flex-wrap gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code text-label-code text-primary-container font-semibold">02 //</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Technical Stack</span>
+</div>
+<span class="font-label-code text-[12px] text-on-surface-variant">Validated Production Competence</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Frontend Architecture -->
+<div class="p-space-lg bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] space-y-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Frontend Architecture</h3>
+<span class="material-symbols-outlined text-primary-container">layers</span>
+</div>
+<div class="space-y-space-sm">
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">React & Next.js (App Router)</span>
+<span class="text-primary-container">98%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[98%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">TypeScript (Advanced Metatypes)</span>
+<span class="text-primary-container">95%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[95%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">Plain CSS & Design Systems</span>
+<span class="text-primary-container">96%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[96%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">State Engines (Zustand, XState)</span>
+<span class="text-primary-container">90%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[90%]"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-code text-[11px] text-on-surface-variant">WebSockets</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-code text-[11px] text-on-surface-variant">WebAssembly</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-code text-[11px] text-on-surface-variant">Micro-Frontends</span>
+</div>
+</div>
+<!-- Backend & Systems -->
+<div class="p-space-lg bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] space-y-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Backend & Systems</h3>
+<span class="material-symbols-outlined text-secondary">database</span>
+</div>
+<div class="space-y-space-sm">
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">Node.js Runtime & Bun</span>
+<span class="text-secondary">92%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[92%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">PostgreSQL & Prisma ORM</span>
+<span class="text-secondary">90%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[90%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">REST & GraphQL API Architecture</span>
+<span class="text-secondary">94%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[94%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">Redis Cache & Pub/Sub</span>
+<span class="text-secondary">88%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[88%]"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-code text-[11px] text-on-surface-variant">OAuth 2.0</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-code text-[11px] text-on-surface-variant">gRPC</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-code text-[11px] text-on-surface-variant">TimescaleDB</span>
+</div>
+</div>
+<!-- DevOps & Tooling -->
+<div class="p-space-lg bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] space-y-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">DevOps & Tooling</h3>
+<span class="material-symbols-outlined text-primary-fixed">terminal</span>
+</div>
+<div class="space-y-space-sm">
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">Git & Automated CI/CD Workflows</span>
+<span class="text-primary-fixed">95%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed h-full rounded-full w-[95%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">Docker Containers & Compose</span>
+<span class="text-primary-fixed">89%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed h-full rounded-full w-[89%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">Cloudflare Workers & AWS Services</span>
+<span class="text-primary-fixed">87%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed h-full rounded-full w-[87%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-code text-label-code mb-1">
+<span class="text-on-surface">Vitest, Jest & Playwright</span>
+<span class="text-primary-fixed">92%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed h-full rounded-full w-[92%]"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-code text-[11px] text-on-surface-variant">Terraform</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-code text-[11px] text-on-surface-variant">Sentry</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-code text-[11px] text-on-surface-variant">GitHub Actions</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: PROJECTS SHOWCASE -->
+<section class="py-space-xl" id="projects">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-md gap-4">
+<div>
+<div class="flex items-center gap-space-sm mb-1">
+<span class="font-label-code text-label-code text-primary-container font-semibold">03 //</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Engineered Artifacts</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Featured Projects</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+          Production systems deployed to tens of thousands of active daily users with stringent uptime benchmarks.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Project 1: PulseFlow -->
+<div class="group p-space-lg bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.4),0_12px_36px_rgba(0,229,255,0.08)] transition-all flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-[12px] text-primary tracking-wide uppercase">Realtime Telemetry</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">v2.4.0</span>
+</div>
+<!-- Terminal / Metric preview visual -->
+<div class="p-3 bg-surface-container-lowest rounded-lg font-label-code text-[12px] text-on-surface-variant space-y-1">
+<div class="flex justify-between text-on-surface">
+<span>Ingest Stream: 124.5k msg/s</span>
+<span class="text-primary-container">Live</span>
+</div>
+<div class="h-1 bg-surface-container-high rounded overflow-hidden">
+<div class="bg-primary-container h-full w-4/5 animate-pulse"></div>
+</div>
+<div class="text-[11px] text-outline pt-1">$ pulseflow --cluster=eu-central-1 --latency=14ms</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+              PulseFlow
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              High-throughput real-time streaming analytics hub processing event pipelines with sub-20ms WebSocket propagation and custom canvas render engines.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">Next.js 14</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">WebSockets</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">ClickHouse</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-label-code text-label-code text-primary-container hover:underline" href="https://example.com" rel="noreferrer" target="_blank">
+<span>Launch Demo</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="inline-flex items-center gap-1.5 font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">code</span>
+<span>Source</span>
+</a>
+</div>
+</div>
+<!-- Project 2: Aura Component System -->
+<div class="group p-space-lg bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.4),0_12px_36px_rgba(0,229,255,0.08)] transition-all flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-code text-[12px] text-secondary tracking-wide uppercase">Design System</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">v1.12.8</span>
+</div>
+<!-- Visual micro mockup -->
+<div class="p-3 bg-surface-container-lowest rounded-lg font-label-code text-[12px] flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 bg-surface-container-high rounded text-[11px] text-primary-container font-bold"><Aura.Button variant="tactile" /></span>
+</div>
+<span class="text-on-surface-variant text-[11px]">0kb Runtime Deps</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+              Aura Component System
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Lightweight Plain CSS & vanilla web-standards component library crafted for sub-microsecond style calculation, full WCAG 2.1 AA tokenization, and multi-brand theming.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">Plain CSS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">Design Tokens</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">Accessibility</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">Web Standards</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-label-code text-label-code text-primary-container hover:underline" href="https://example.com" rel="noreferrer" target="_blank">
+<span>View Storybook</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="inline-flex items-center gap-1.5 font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">code</span>
+<span>Source</span>
+</a>
+</div>
+</div>
+<!-- Project 3: CloudVault -->
+<div class="group p-space-lg bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.4),0_12px_36px_rgba(0,229,255,0.08)] transition-all flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-code text-[12px] text-primary tracking-wide uppercase">Security & Cloud</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">v3.0.1</span>
+</div>
+<!-- Terminal visual -->
+<div class="p-3 bg-surface-container-lowest rounded-lg font-label-code text-[12px] text-on-surface-variant flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary-container">lock</span>
+<span class="text-on-surface text-[11px]">AES-256-GCM Hardware Accelerated</span>
+</div>
+<span class="text-primary-container text-[11px]">Encrypted</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+              CloudVault
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Zero-knowledge client-side encrypted file synchronizer and distributed multi-region backup pipeline built on WebCrypto APIs and edge-routed storage.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">WebCrypto API</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">Cloudflare Workers</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">PostgreSQL</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-label-code text-label-code text-primary-container hover:underline" href="https://example.com" rel="noreferrer" target="_blank">
+<span>Explore Vault</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="inline-flex items-center gap-1.5 font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">code</span>
+<span>Source</span>
+</a>
+</div>
+</div>
+<!-- Project 4: DevSprint -->
+<div class="group p-space-lg bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.4),0_12px_36px_rgba(0,229,255,0.08)] transition-all flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-code text-[12px] text-tertiary-fixed-dim tracking-wide uppercase">Workflow Automation</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant">v1.8.4</span>
+</div>
+<!-- Terminal visual -->
+<div class="p-3 bg-surface-container-lowest rounded-lg font-label-code text-[12px] text-on-surface-variant flex items-center justify-between">
+<span class="text-on-surface text-[11px]">$ devsprint orchestrate --sprint=42 --dry-run=false</span>
+<span class="text-tertiary-fixed-dim text-[11px]">Synced</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+              DevSprint
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Autonomous developer agile orchestrator that correlates PR review queues, git telemetry, and deployment health metrics into intelligent sprint cycles.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">Node.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">GraphQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">Docker</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low font-label-code text-[11px] text-on-surface">Redis</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-label-code text-label-code text-primary-container hover:underline" href="https://example.com" rel="noreferrer" target="_blank">
+<span>Live Console</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="inline-flex items-center gap-1.5 font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">code</span>
+<span>Source</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: EXPERIENCE & EDUCATION TIMELINE -->
+<section class="py-space-xl" id="experience">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="font-label-code text-label-code text-primary-container font-semibold">04 //</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Career Chronology</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
+<!-- Professional Work Experience -->
+<div class="space-y-space-md">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-primary-container">work</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Experience</h3>
+</div>
+<div class="space-y-space-md relative pl-6 before:content-[''] before:absolute before:top-2 before:bottom-2 before:left-2 before:w-[1px] before:bg-surface-container-high">
+<!-- Role 1 -->
+<div class="relative space-y-1">
+<span class="absolute -left-6 top-1.5 w-2.5 h-2.5 rounded-full bg-primary-container ring-4 ring-surface"></span>
+<div class="flex items-center justify-between flex-wrap">
+<h4 class="font-headline-sm text-[18px] text-on-surface font-semibold">Senior Full Stack Engineer</h4>
+<span class="font-label-code text-[12px] text-primary">2022 — Present</span>
+</div>
+<p class="font-label-code text-[13px] text-on-surface-variant">Apex Tech Labs</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Led frontend architecture for multi-tenant SaaS. Overhauled core UI state pipeline reducing memory leaks by 40% and improved P99 page render speeds to under 120ms across 2M monthly sessions.
+              </p>
+</div>
+<!-- Role 2 -->
+<div class="relative space-y-1">
+<span class="absolute -left-6 top-1.5 w-2.5 h-2.5 rounded-full bg-surface-container-highest ring-4 ring-surface"></span>
+<div class="flex items-center justify-between flex-wrap">
+<h4 class="font-headline-sm text-[18px] text-on-surface font-semibold">Frontend Engineer</h4>
+<span class="font-label-code text-[12px] text-on-surface-variant">2020 — 2022</span>
+</div>
+<p class="font-label-code text-[13px] text-on-surface-variant">Nexus Digital Studio</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Authored resilient micro-frontend integrations and interactive web applications for enterprise clients. Standardized component guidelines and enforced end-to-end testing with 94% coverage.
+              </p>
+</div>
+<!-- Role 3 -->
+<div class="relative space-y-1">
+<span class="absolute -left-6 top-1.5 w-2.5 h-2.5 rounded-full bg-surface-container-highest ring-4 ring-surface"></span>
+<div class="flex items-center justify-between flex-wrap">
+<h4 class="font-headline-sm text-[18px] text-on-surface font-semibold">Junior Web Developer</h4>
+<span class="font-label-code text-[12px] text-on-surface-variant">2018 — 2020</span>
+</div>
+<p class="font-label-code text-[13px] text-on-surface-variant">Craft Interactive</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Developed responsive web pages and reusable UI modules. Spearheaded performance audits that cut mobile bundle sizes in half and accelerated core client load times.
+              </p>
+</div>
+</div>
+</div>
+<!-- Education & Credentials -->
+<div class="space-y-space-md">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-secondary">school</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Education & Certs</h3>
+</div>
+<div class="space-y-space-md relative pl-6 before:content-[''] before:absolute before:top-2 before:bottom-2 before:left-2 before:w-[1px] before:bg-surface-container-high">
+<!-- Degree -->
+<div class="relative space-y-1">
+<span class="absolute -left-6 top-1.5 w-2.5 h-2.5 rounded-full bg-secondary-container ring-4 ring-surface"></span>
+<div class="flex items-center justify-between flex-wrap">
+<h4 class="font-headline-sm text-[18px] text-on-surface font-semibold">B.S. in Computer Science</h4>
+<span class="font-label-code text-[12px] text-secondary">Class of 2018</span>
+</div>
+<p class="font-label-code text-[13px] text-on-surface-variant">University of California, Berkeley</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Focused coursework on Distributed Systems, Compilers, Algorithmic Complexity, and Human-Computer Interaction (HCI). Magna Cum Laude.
+              </p>
+</div>
+<!-- Certification 1 -->
+<div class="relative space-y-1">
+<span class="absolute -left-6 top-1.5 w-2.5 h-2.5 rounded-full bg-surface-container-highest ring-4 ring-surface"></span>
+<div class="flex items-center justify-between flex-wrap">
+<h4 class="font-headline-sm text-[18px] text-on-surface font-semibold">AWS Certified Cloud Practitioner</h4>
+<span class="font-label-code text-[12px] text-on-surface-variant">Amazon Web Services</span>
+</div>
+<p class="font-label-code text-[13px] text-on-surface-variant">Validation ID: AWS-8491029</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Comprehensive foundation in AWS cloud architectures, security baselines, compute isolation, and serverless architectures.
+              </p>
+</div>
+<!-- Certification 2 / Specialization -->
+<div class="relative space-y-1">
+<span class="absolute -left-6 top-1.5 w-2.5 h-2.5 rounded-full bg-surface-container-highest ring-4 ring-surface"></span>
+<div class="flex items-center justify-between flex-wrap">
+<h4 class="font-headline-sm text-[18px] text-on-surface font-semibold">Web Accessibility Specialist (WAS)</h4>
+<span class="font-label-code text-[12px] text-on-surface-variant">IAAP Certified</span>
+</div>
+<p class="font-label-code text-[13px] text-on-surface-variant">Digital Inclusivity Standards</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Rigorous testing and implementation of WCAG 2.1 guidelines, ARIA patterns, and non-visual user interface engineering.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CONTACT & GET IN TOUCH -->
+<section class="py-space-xl" id="contact">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="font-label-code text-label-code text-primary-container font-semibold">05 //</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Initialize Connection</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Direct channels card -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="space-y-space-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Let's build something remarkable.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Whether you need senior architecture leadership, performance remediation, or design system engineering, my inbox is open.
+            </p>
+</div>
+<div class="space-y-space-sm">
+<a class="p-space-sm bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.35)] transition-all flex items-center gap-space-sm group" href="mailto:alex.morgan@example.com">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-lg">mail</span>
+</div>
+<div>
+<div class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider">Direct Email</div>
+<div class="font-label-code text-label-code text-on-surface font-semibold group-hover:text-primary-container transition-colors">alex.morgan@example.com</div>
+</div>
+</a>
+<div class="grid grid-cols-3 gap-2">
+<a class="p-3 bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.3)] transition-all flex flex-col items-center justify-center text-center group" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl text-on-surface-variant group-hover:text-primary-container transition-colors mb-1">terminal</span>
+<span class="font-label-code text-[11px] text-on-surface">GitHub</span>
+</a>
+<a class="p-3 bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.3)] transition-all flex flex-col items-center justify-center text-center group" href="https://linkedin.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl text-on-surface-variant group-hover:text-primary-container transition-colors mb-1">share</span>
+<span class="font-label-code text-[11px] text-on-surface">LinkedIn</span>
+</a>
+<a class="p-3 bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)] hover:shadow-[0_0_0_1px_rgba(0,229,255,0.3)] transition-all flex flex-col items-center justify-center text-center group" href="https://twitter.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl text-on-surface-variant group-hover:text-primary-container transition-colors mb-1">tag</span>
+<span class="font-label-code text-[11px] text-on-surface">Twitter/X</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Interactive Contact Form -->
+<div class="lg:col-span-7 p-space-lg bg-surface-container rounded-xl shadow-[0_0_0_1px_rgba(255,255,255,0.06)]">
+<form class="space-y-space-sm" id="portfolio-contact-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-code text-[12px] text-on-surface-variant block" for="name-input">Full Name</label>
+<input class="w-full px-space-sm py-2.5 bg-surface-container-low rounded-lg text-on-surface font-body-sm placeholder:text-outline shadow-[0_0_0_1px_rgba(255,255,255,0.08)] focus:shadow-[0_0_0_1px_#00e5ff,0_0_0_3px_rgba(0,229,255,0.15)] outline-none transition-all" id="name-input" placeholder="e.g. Elena Rostova" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-code text-[12px] text-on-surface-variant block" for="email-input">Email Address</label>
+<input class="w-full px-space-sm py-2.5 bg-surface-container-low rounded-lg text-on-surface font-body-sm placeholder:text-outline shadow-[0_0_0_1px_rgba(255,255,255,0.08)] focus:shadow-[0_0_0_1px_#00e5ff,0_0_0_3px_rgba(0,229,255,0.15)] outline-none transition-all" id="email-input" placeholder="elena@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-code text-[12px] text-on-surface-variant block" for="subject-input">Subject</label>
+<input class="w-full px-space-sm py-2.5 bg-surface-container-low rounded-lg text-on-surface font-body-sm placeholder:text-outline shadow-[0_0_0_1px_rgba(255,255,255,0.08)] focus:shadow-[0_0_0_1px_#00e5ff,0_0_0_3px_rgba(0,229,255,0.15)] outline-none transition-all" id="subject-input" placeholder="Architectural Consultation / Project Inquiry" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-code text-[12px] text-on-surface-variant block" for="message-input">Message Specification</label>
+<textarea class="w-full px-space-sm py-2.5 bg-surface-container-low rounded-lg text-on-surface font-body-sm placeholder:text-outline shadow-[0_0_0_1px_rgba(255,255,255,0.08)] focus:shadow-[0_0_0_1px_#00e5ff,0_0_0_3px_rgba(0,229,255,0.15)] outline-none transition-all resize-none" id="message-input" placeholder="Tell me about project scope, timelines, and technical challenges..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="px-space-lg py-space-sm bg-gradient-to-r from-secondary-container to-primary-container text-on-primary-fixed font-headline-sm text-[15px] font-semibold rounded-lg shadow-[0_0_20px_rgba(0,229,255,0.2)] hover:shadow-[0_0_28px_rgba(0,229,255,0.35)] hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center gap-2" id="contact-submit-btn" type="submit">
+<span>Transmit Message</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+<div class="hidden font-label-code text-[12px] text-primary-container items-center gap-1.5" id="contact-feedback">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span>Message received. I will respond within 24h.</span>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- FLOATING CONTROLS: THEME SWITCH & SCROLL TO TOP -->
+<div class="fixed bottom-6 right-6 z-40 flex items-center gap-2">
+<button aria-label="Toggle Theme Mode" class="w-10 h-10 rounded-full bg-surface-container-high/90 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.12),0_8px_20px_rgba(0,0,0,0.4)] flex items-center justify-center text-on-surface hover:text-primary-container hover:scale-105 active:scale-95 transition-all" id="runtime-theme-toggle" type="button">
+<span class="material-symbols-outlined text-xl" id="theme-toggle-icon">light_mode</span>
+</button>
+<a aria-label="Scroll to Top" class="w-10 h-10 rounded-full bg-surface-container-high/90 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.12),0_8px_20px_rgba(0,0,0,0.4)] flex items-center justify-center text-on-surface hover:text-primary-container hover:scale-105 active:scale-95 transition-all" href="#hero">
+<span class="material-symbols-outlined text-xl">arrow_upward</span>
+</a>
+</div>
+</div>
+<!-- Vanilla Client-Side Orchestrator Script -->
+<script>
+    // Smooth scrolling for hash links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId !== '#') {
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.pushState(null, '', targetId);
+          }
+        }
+      });
+    });
+
+    // Handle Form Submission
+    window.handleFormSubmit = function() {
+      const btn = document.getElementById('contact-submit-btn');
+      const feedback = document.getElementById('contact-feedback');
+      const form = document.getElementById('portfolio-contact-form');
+      
+      btn.disabled = true;
+      btn.classList.add('opacity-70');
+      btn.innerText = 'Transmitting...';
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.classList.remove('opacity-70');
+        btn.innerHTML = '<span>Message Transmitted</span><span class="material-symbols-outlined text-sm">done_all</span>';
+        feedback.classList.remove('hidden');
+        feedback.classList.add('flex');
+        form.reset();
+
+        setTimeout(() => {
+          btn.innerHTML = '<span>Transmit Message</span><span class="material-symbols-outlined text-sm">send</span>';
+        }, 4000);
+      }, 700);
+    };
+
+    // Download CV Mock Interaction
+    const cvBtn = document.getElementById('download-cv-btn');
+    if (cvBtn) {
+      cvBtn.addEventListener('click', () => {
+        const originalText = cvBtn.innerHTML;
+        cvBtn.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">sync</span><span>Preparing PDF...</span>';
+        setTimeout(() => {
+          cvBtn.innerHTML = '<span class="material-symbols-outlined text-base text-primary-container">download_done</span><span>Downloaded</span>';
+          setTimeout(() => {
+            cvBtn.innerHTML = originalText;
+          }, 2500);
+        }, 800);
+      });
+    }
+
+    // Dynamic Theme Switcher (Toggles root html dark class and data-theme attributes)
+    const themeBtn = document.getElementById('runtime-theme-toggle');
+    const themeIcon = document.getElementById('theme-toggle-icon');
+    
+    // Check initial state
+    const htmlEl = document.documentElement;
+    let isDark = htmlEl.classList.contains('dark') || htmlEl.getAttribute('data-theme') !== 'light';
+
+    function updateThemeUI(dark) {
+      if (dark) {
+        htmlEl.classList.add('dark');
+        htmlEl.setAttribute('data-theme', 'dark');
+        if (themeIcon) themeIcon.textContent = 'light_mode';
+      } else {
+        htmlEl.classList.remove('dark');
+        htmlEl.setAttribute('data-theme', 'light');
+        if (themeIcon) themeIcon.textContent = 'dark_mode';
+      }
+    }
+
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        isDark = !isDark;
+        updateThemeUI(isDark);
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-xl py-space-xl"><div class="max-w-[1200px] mx-auto px-margin-mobile md:px-gutter lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-label-code text-label-code text-primary-container font-semibold">• live</span><span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Crafted with Architectural Precision</span></div><div class="font-label-code text-label-code text-on-surface-variant text-center md:text-right">© 2025 Architectural Engineering & Systems. All rights reserved.</div></div></footer></body></html>

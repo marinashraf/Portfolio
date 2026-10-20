@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+<!-- STITCH_THREEJS_START:ANIMATION_1 class="fixed inset-0 w-full h-full bg-transparent" -->
+<div class="fixed inset-0 w-full h-full bg-transparent" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_1" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_1');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  # Personal Portfolio Website (React + Vite + Plain CSS)
+
+A complete, production-ready React + Vite personal portfolio application built with pure CSS (no Tailwind), custom theme switching (Dark/Light mode), responsive navigation, smooth scrolling, interactive project cards, categorized skills, timeline for experience & education, and interactive contact form/links.
+
+## Project Structure
+
+```
+portfolio/
+├── package.json
+├── vite.config.js
+├── index.html
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── index.css
+    ├── styles/
+    │   ├── theme.css
+    │   ├── navbar.css
+    │   ├── hero.css
+    │   ├── about.css
+    │   ├── skills.css
+    │   ├── projects.css
+    │   ├── timeline.css
+    │   ├── contact.css
+    │   └── footer.css
+    ├── components/
+    │   ├── Navbar.jsx
+    │   ├── Hero.jsx
+    │   ├── About.jsx
+    │   ├── Skills.jsx
+    │   ├── Projects.jsx
+    │   ├── ExperienceEducation.jsx
+    │   ├── Contact.jsx
+    │   └── Footer.jsx
+    └── data/
+        └── portfolioData.js
+```
+
+---
+
+### `package.json`
+```json
+{
+  "name": "developer-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.383.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^5.2.11"
+  }
+}
+```
+
+---
+
+### `vite.config.js`
+```javascript
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+});
+```
+
+---
+
+### `index.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Personal Portfolio | Software Engineer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+
+```
+
+---
+
+### `src/main.jsx`
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <react.strictmode>
+<app></app>
+</react.strictmode>,
+);
+```
+
+---
+
+### `src/styles/theme.css`
+```css
+:root {
+  /* Light Theme Tokens */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: rgba(255, 255, 255, 0.98);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border-color: rgba(148, 163, 184, 0.25);
+  --border-focus: #2563eb;
+  --accent-primary: #2563eb;
+  --accent-secondary: #06b6d4;
+  --accent-gradient: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  --badge-bg: #e2e8f0;
+  --badge-text: #1e293b;
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 35px -10px rgba(15, 23, 42, 0.12);
+  --glow: 0 0 40px rgba(37, 99, 235, 0.15);
+  --nav-backdrop: rgba(248, 250, 252, 0.8);
+}
+
+[data-theme="dark"] {
+  /* Dark Theme Tokens */
+  --bg-primary: #090d16;
+  --bg-secondary: #0f172a;
+  --bg-card: rgba(15, 23, 42, 0.7);
+  --bg-card-hover: rgba(30, 41, 59, 0.85);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-focus: #38bdf8;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #38bdf8;
+  --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #38bdf8 100%);
+  --badge-bg: rgba(59, 130, 246, 0.12);
+  --badge-text: #93c5fd;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  --glow: 0 0 60px rgba(56, 189, 248, 0.15);
+  --nav-backdrop: rgba(9, 13, 22, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+code, .mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+```
+
+---
+
+### `src/data/portfolioData.js`
+```javascript
+export const personalInfo = {
+  name: "Alex Morgan",
+  title: "Senior Full Stack Engineer &amp; UI Architect",
+  location: "San Francisco, CA / Remote",
+  bio: "I design and build resilient, high-performance web applications and design systems. Passionate about clean code architecture, accessible UI, and delightful user experiences.",
+  email: "alex.morgan@example.com",
+  github: "https://github.com",
+  linkedin: "https://linkedin.com",
+  twitter: "https://twitter.com",
+  resumeUrl: "#resume",
+  stats: [
+    { label: "Years Experience", value: "6+" },
+    { label: "Production Apps", value: "30+" },
+    { label: "Open Source Stars", value: "1.2k" },
+    { label: "Code Quality", value: "99.9%" }
+  ]
+};
+
+export const skillsData = {
+  "Frontend Architecture": [
+    { name: "React / React Native", level: 95 },
+    { name: "TypeScript / JavaScript (ES6+)", level: 92 },
+    { name: "Next.js / Vite", level: 90 },
+    { name: "Plain CSS &amp; Modern Layouts (Grid/Flex)", level: 95 },
+    { name: "State Management (Zustand, Redux)", level: 88 },
+    { name: "Web Performance &amp; Accessibility (a11y)", level: 90 }
+  ],
+  "Backend &amp; Systems": [
+    { name: "Node.js / Express", level: 88 },
+    { name: "REST &amp; GraphQL APIs", level: 86 },
+    { name: "PostgreSQL / Prisma", level: 82 },
+    { name: "Redis &amp; Caching", level: 80 },
+    { name: "Serverless &amp; Microservices", level: 78 }
+  ],
+  "DevOps &amp; Workflow": [
+    { name: "Git / CI/CD Workflows", level: 90 },
+    { name: "Docker &amp; Containerization", level: 82 },
+    { name: "AWS / Cloudflare Deployments", level: 80 },
+    { name: "Unit &amp; Integration Testing (Jest, Vitest)", level: 85 }
+  ]
+};
+
+export const projectsData = [
+  {
+    id: 1,
+    title: "PulseFlow - Realtime Analytics Hub",
+    description: "High-throughput telemetry and analytics dashboard with sub-second event streaming, customized metrics aggregation, and interactive SVG/Canvas charts.",
+    tags: ["React", "TypeScript", "Vite", "WebSockets", "CSS Grid"],
+    github: "https://github.com/example/pulseflow",
+    demo: "https://example.com/pulseflow",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "Aura Component System",
+    description: "An accessible, themeable design token framework and component library built completely with plain CSS and modern semantic web components.",
+    tags: ["React", "Pure CSS", "Design Systems", "WCAG 2.1 AAA"],
+    github: "https://github.com/example/aura-system",
+    demo: "https://example.com/aura-system",
+    featured: true
+  },
+  {
+    id: 3,
+    title: "CloudVault - Encrypted Workspace",
+    description: "Zero-knowledge client-side encrypted file syncing and collaboration web application built for remote technical and legal engineering teams.",
+    tags: ["React", "Node.js", "Web Crypto API", "IndexedDB", "CSS3"],
+    github: "https://github.com/example/cloudvault",
+    demo: "https://example.com/cloudvault",
+    featured: false
+  },
+  {
+    id: 4,
+    title: "DevSprint - Agile Task Automation",
+    description: "Kanban and sprint planning tool equipped with AI-assisted user story estimation, keyboard shortcuts navigation, and offline syncing.",
+    tags: ["React", "REST API", "PWA", "Service Workers", "CSS Flexbox"],
+    github: "https://github.com/example/devsprint",
+    demo: "https://example.com/devsprint",
+    featured: false
+  }
+];
+
+export const experienceData = [
+  {
+    role: "Senior Full Stack Engineer",
+    company: "Apex Tech Labs",
+    period: "2022 - Present",
+    description: "Lead the frontend architecture of high-scale enterprise platforms. Mentored 8 junior and mid-level developers, reduced page load bundle size by 42%, and standardized company-wide accessibility guidelines.",
+    technologies: ["React", "TypeScript", "Vite", "REST", "Node.js"]
+  },
+  {
+    role: "Frontend Engineer",
+    company: "Nexus Digital Studio",
+    period: "2020 - 2022",
+    description: "Delivered 14 bespoke commercial client web applications from scratch with seamless custom responsive layouts, micro-animations, and 100/100 Lighthouse performance scores.",
+    technologies: ["JavaScript", "React", "CSS3", "Git", "Webpack"]
+  },
+  {
+    role: "Junior Web Developer",
+    company: "Craft interactive",
+    period: "2018 - 2020",
+    description: "Collaborated with UI/UX designers to convert Figma mockups into responsive, modular markup and components. Maintained internal testing pipelines.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "REST APIs"]
+  }
+];
+
+export const educationData = [
+  {
+    degree: "B.S. in Computer Science",
+    institution: "University of California, Berkeley",
+    period: "2014 - 2018",
+    description: "Focused on Software Engineering, Distributed Systems, Data Structures &amp; Algorithms, and Human-Computer Interaction (HCI)."
+  },
+  {
+    degree: "Certified Cloud Practitioner",
+    institution: "Amazon Web Services (AWS)",
+    period: "2021",
+    description: "Validation of foundational cloud architecture, security principles, and scalable infrastructure deployment."
+  }
+];
+```
+
+---
+
+### `src/App.jsx`
+```javascript
+import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import ExperienceEducation from './components/ExperienceEducation';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './styles/theme.css';
+
+export default function App() {
+  const [theme, setTheme] = useState(() =&gt; {
+    return localStorage.getItem('theme') || 'dark';
+  });
+
+  useEffect(() =&gt; {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () =&gt; {
+    setTheme(prev =&gt; (prev === 'dark' ? 'light' : 'dark'));
+  };
+
+  return (
+    <div classname="portfolio-app">
+<navbar theme="{theme}" toggletheme="{toggleTheme}"></navbar>
+<main>
+<hero></hero>
+<about></about>
+<skills></skills>
+<projects></projects>
+<experienceeducation></experienceeducation>
+<contact></contact>
+</main>
+<footer></footer>
+</div>
+  );
+}
+```
+
+---
+
+### Component &amp; CSS Files included in instructions and output code.
+
+})();
+
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_1 -->
+</body>
+</html>
